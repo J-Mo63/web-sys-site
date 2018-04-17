@@ -1,0 +1,98 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+        
+		<title>comments.html</title>
+		<link rel="stylesheet" type="text/css" href="websystems.css">
+        
+	</head>
+    
+    
+	<body>
+        
+		<div class="image_head">
+            <h1 class="title blue">
+                <strong>comments.html</strong>
+            </h1>
+		</div>
+        
+        
+		<div class="side_menu">
+            <h2 class="menu">
+                <a href="index.html" class="green">index.html</a>
+            </h2>
+            <h2 class="menu">
+                <a href="past.html" class="purple">past.html</a>
+            </h2>
+            <h2 class="menu">
+                <a href="future.html" class="orange">future.html</a>
+            </h2>
+            <h2 class="menu">
+                <a href="comments.html" class="blue">comments.html</a>
+            </h2>
+            <h5 class="fixed">
+                <a href="../index.html" class="yellow non-bold">home</a>
+            </h5>
+        </div>
+        
+        
+        <div class="content_section">
+            <h1 class="heading blue">HTML Structure</h1>
+            <p class="content blue">The page may look deceptively simple, but uses a convoluted structure.</p>
+            <p class="content blue">While one might assume that components like the menu are part of <code>.image_head</code>, in line with the page title, it actually uses absolute positioning to keep it in the top left of the screen. Additionally, absolute positioning is also used in order to keep the menu section across from the content area, providing an illusion that may suggest that it is divided up via a table.</p>
+            <p class="content blue">Below is an illustration of the website layout by css class name:</p>
+            <img class="img-indent" id="image-scale-diagram" src="res/diagram.png" alt="Diagram of Layout">
+            <p class="content blue">As shown, <code>.fixed</code> is actually contained inside <code>.side_menu</code> as it both provides the same styling as the other items in the menu, as well as displaying alongside the other options in the case of CSS being turned off.</p>
+            <p class="content blue">The previously mentioned <code>.image_head</code>, is a div containing <code>.title</code> that is styled with a span, mostly because it is required by the assignment.</p>
+            <br>
+            <br>
+            
+            <h2 class="heading blue">CSS</h2>
+            <p class="content blue">Since the number of colours is a big part of the page aesthetic, I decided the most efficient way to apply colour would be to create a number of colour classes and add them to elements alongside other divs. This was only able to happen due to my discovery that doing this...</p>
+            <code class="coding blue">class=“style1 style2”</code> 
+            <p class="content blue">...is legal.</p>
+            <p class="content blue">This method has allowed me to keep my CSS somewhat concise considering how much styling has been applied to the page.</p>
+            <p class="content blue">As mentioned before, positioning has played a big part in the development of this site, as it is what allows <code>.content_section</code> to scroll, while <code>.side_menu</code> moves with the browser screen focus. This is done by using the positioning type ‘absolute’, which has any element with absolute positioning applied stay in a specified location despite any other elements interaction, or user input (unless otherwise specified). You can see this in action by scrolling on this page.</p>
+            <p class="content blue">The stylesheet contains only a handful of ID tags as they are not essential in this website (no Javascript is being used). The only instance in which I use them is for the images, as each image on the website is unique, and has their own stylings seperate.</p>
+            <p class="content blue">Finally, I will also mention that the buttons were created using the <code>:hover</code> CSS method, changing colour when the mouse hovers over it.</p>
+            <br>
+            <br>
+            
+            <h2 class="heading blue">Aesthetics</h2>
+            <p class="content blue">Aesthetically, the site was created using a stimulus, being themed to be reminiscent of a programming IDE. My decision to do this was influenced by my interest in programming, alongside the subject of Web Systems. It is primarily about coding and UNIX, a topic that has ‘Linux hacker’ written all over it.</p>
+            <p class="content blue">The original concept was to do the entire site in black and green, being a throwback to the days in which computer monitors would use this colour scheme to save on power consumption while having the highest contrast levels.</p>
+            <p class="content blue">However this changed when I thought that it should be a little more exiting than that colour-wise. If you look at the following image of an IDE...</p>
+            <img class="img-indent" id="image-scale-ide" src="res/ide.jpg" alt="Image of Programming IDE"> 
+            <!-- Image taken from product images of Ninja IDE's website.-->
+            <p class="content blue">...you can see that the range of bright colours used upon the dark grey background give it a somewhat playful feel and somehow synergise quite well despite their ‘atonal’ nature.</p>
+            <p class="content blue">In terms of layout goals, I decided I wanted to divide the screen into two different sections; one being a menu/page selection list and the other being where the actual page content was displayed. This too is a principle taken from IDEs, as they often have a panel on the left hand side displaying files in a project, with the main content area being on the right (however in the photo above, it’s the other way around).</p>
+            <p class="content blue">The naming of the pages was again an idea coming from the theme, being that each page should be a file, so what better way to play on that than to literally use their file extensions in the page titles which you can see is also used in the <code>.side_menu</code> section.</p>
+            <p class="content blue">The font was the final piece of the puzzle, being what made the page unmistakably a reference to coding. My choice of Courier New instantly elevated the likeness of the page to an IDE or terminal. The font and its family have long-since been used as a standard for coding-related products, the reason being that it is simple and easy to read at a distance.</p>
+            <br>
+            <br>
+            
+            <h2 class="heading blue">Accessibility</h2>
+            <p class="content blue">There are 3 main types of accessability issues to be considered in web-development:</p>
+            <ul class="content blue list-indent">
+                <li>
+                    <span>Visual</span>
+                </li>
+                <li>
+                    <span>Motor</span>
+                </li>
+                <li>
+                    <span>Auditory</span>
+                </li>
+            </ul>
+            <p class="content blue">In terms of visually impaired accessibility, the website is quite good. The two ways I looked at solving this issue was in the use of high contrast colours, as well as the pages ability to be read aloud by a screen reader (usually used by blind individuals).</p>
+            <p class="content blue">Luckily, the theme that I was working towards with the aesthetic of the site was created with contrast in mind, and thus all the colours used on the site are easily read by people with low or poor vision.</p>
+            <p class="content blue">Furthermore, the contrast to colourblind people for these colours is also excellent. Using a program downloaded from the internet, I was able to temporarily change the colour of my screen to see what the page would look like to colourblind individuals. The program allowed me to cycle through the three most common forms of colourblindness. You can review the results of viewing comments.html in Deuteranopia mode, the most common form of colourblindness (which affects about 5% of all males) below:</p>
+            <img class="img-indent" id="image-scale-colour" src="res/colour.jpg" alt="Representation of comments.html through colourblindness">
+            <p class="content blue">I also decided to check the ability of the webpage to be read aloud using a screen-reader. Again, I was surprised at how well it worked, reading out all the page text quite accurately, and I was able to navigate the site with my eyes closed to some extent (probably takes some more practise).</p>
+            <p class="content blue">With regard to motor skill impairment such as Parkinson’s Disease or Tremors, I have made the menu buttons quite large, meaning that it would be relatively easy to navigate the site with one of those conditions. The size of elements on the screen is even larger than those on a lot of highly popular sites - Facebook or Google for instance.</p>
+            <p class="content blue">Auditory impairment is not an issue as no sounds are played on this site (at Chris Wong’s request).</p>
+            <br>
+            <br>
+        </div>
+	</body>
+</html>

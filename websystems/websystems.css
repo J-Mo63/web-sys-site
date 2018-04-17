@@ -1,0 +1,142 @@
+body {
+	background-color: #1e1e1e;
+}
+
+.green {color: #80ff80;}
+.purple {color: #b369bf;}
+.orange {color: #f8a008;}
+.blue {color: #68c7d2;}
+.yellow {color: #f4ec2a;}
+.grey {color: #b3bfa7;}
+.toolbar {color: #5e5f5d}
+
+.non-bold {
+    font-weight: normal;
+}
+
+.right {
+    vertical-align: bottom;
+}
+
+.left {
+    vertical-align: middle;
+}
+
+.menu {
+    background: #262626;
+    width: 25vw;
+    padding-left: 4%;
+}
+
+.menu:hover {
+    background: #333333;
+}
+
+.title {
+	font-family: "Courier New", Courier, monospace;
+	padding: 10px;
+}
+
+.side_menu {
+	width: 25%;
+	height: 50%;
+	font-family: "Courier New", Courier, monospace;
+	padding: 20px;
+    font-size: 2vw;
+    position:fixed;
+}
+
+.content_section {
+    width: 60%;
+    position: absolute;
+    top: 21%;
+    right: 5%;
+    background: #262626;
+    padding: 10px;
+}
+
+.content {
+	font-family: "Courier New", Courier, monospace;
+    font-size: 1.3vw;
+	padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 0%;
+}
+
+.heading {
+	font-family: "Courier New", Courier, monospace;
+    font-size: 2vw;
+	padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 0%;
+}
+
+a {
+	text-decoration: none;
+	font-family: "Courier New", Courier, monospace;
+}
+
+.link {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.image_head {
+	text-align: center;
+	margin-left: auto;
+	margin-right:auto;	
+}
+
+.span-all {
+    width: 100%;
+}
+
+#thelink:hover {
+    background-color: blue;
+}
+
+.fixed {
+    background: #262626;
+    width: 5vw;
+    padding-left: 1%;
+    position:fixed;
+    top:0;
+    z-index:100;
+}
+
+.fixed:hover {
+    background: #333333;
+}
+
+.img-indent {
+    padding-left: 3vw;
+}
+
+.list-indent {
+    padding-left: 4.3vw;
+}
+
+#image-scale-sudo {
+    height: 12vw;
+}
+#image-scale-diagram {
+    height: 15vw;
+}
+#image-scale-ide {
+    height: 15vw;
+}
+#image-scale-colour {
+    height: 15vw;
+}
+
+.coding {
+    padding-left: 6vw;
+}
+
+.opening {
+    font-size: 3vw;
+}
+
+.span {
+    font-weight: 400;
+}
